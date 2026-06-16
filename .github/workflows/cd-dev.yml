@@ -8,7 +8,7 @@ jobs:
   deploy:
     name: Deploy to Render (Dev)
     runs-on: ubuntu-latest
-    environment: development  # Injects environment-level secrets
+    environment: develop  # Injects environment-level secrets
 
     steps:
       - name: Checkout Code
