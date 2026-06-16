@@ -17,4 +17,4 @@ jobs:
       - name: Trigger Render Deploy Hook
         run: |
           curl -X POST ${{ secrets.RENDER_DEV }}
-          echo "Deployment to Development triggered at $(date)"
+          echo "Deployment to Development triggered at $(date)" 
