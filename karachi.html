@@ -1,1 +1,109 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karachi - City of Lights | PakVista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="particles" id="particles"></div>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🏙️</div>
+      <span class="nav-logo-text">PakVista</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lahore.html">Lahore</a></li>
+      <li><a href="hunza.html">Hunza</a></li>
+      <li><a href="swat.html">Swat</a></li>
+      <li><a href="karachi.html" class="active">Karachi</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Plan Trip</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/karachi_hero.jpg');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Karachi</span></div>
+      <div class="page-hero-tag">🌊 Coastal Metropolis · Sindh</div>
+      <h1 class="page-hero-title">Karachi</h1>
+      <p class="page-hero-subtitle">Pakistan's vast, energetic port city — a mosaic of beaches, bazaars, and rich cultural life.</p>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h2>Clifton Beach</h2>
+      <p>Clifton Beach is one of Karachi’s most famous attractions. Visitors enjoy the sea breeze, camel rides, food stalls, and beautiful sunset views along the Arabian Sea.</p>
+      <figure>
+        <img src="assets/images/karachi_hero.jpg" alt="Clifton Beach" style="max-width:100%; height:auto;">
+        <figcaption>Clifton Beach, Karachi</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Mohatta Palace</h2>
+      <p>Mohatta Palace is a historic building that reflects Karachi’s architectural beauty. Today, it is used as a museum and cultural center, attracting tourists and history lovers.</p>
+      <figure>
+        <img src="assets/images/karachi_hero.jpg" alt="Mohatta Palace" style="max-width:100%; height:auto; object-position: 40% 30%;">
+        <figcaption>Mohatta Palace heritage site</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Pakistan Maritime Museum</h2>
+      <p>The Pakistan Maritime Museum presents the naval history of Pakistan through galleries, ship models, submarines, and outdoor exhibits. It is an educational and family-friendly destination.</p>
+      <figure>
+        <img src="assets/images/karachi_hero.jpg" alt="Maritime Museum" style="max-width:100%; height:auto;">
+        <figcaption>Pakistan Maritime Museum, Karachi</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">PakVista</div>
+    <p class="footer-tagline">Explore the extraordinary beauty of Pakistan</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="lahore.html">Lahore</a>
+      <a href="hunza.html">Hunza</a>
+      <a href="swat.html">Swat</a>
+      <a href="karachi.html">Karachi</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PakVista — DevOps Semester Project &nbsp;|&nbsp; Made with ❤️ in Pakistan</p>
+    </div>
+  </footer>
+
+  <script>
+    const container = document.getElementById('particles');
+    const colors = ['rgba(0,207,255,0.4)', 'rgba(11,196,160,0.4)', 'rgba(255,255,255,0.15)'];
+    for (let i = 0; i < 25; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      const size = Math.random() * 4 + 2;
+      Object.assign(p.style, {
+        left: `${Math.random() * 100}%`,
+        width: `${size}px`, height: `${size}px`,
+        background: colors[Math.floor(Math.random() * colors.length)],
+        animationDuration: `${Math.random() * 15 + 10}s`,
+        animationDelay: `${Math.random() * 10}s`,
+      });
+      container.appendChild(p);
+    }
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+
+    const revealEls = document.querySelectorAll('.reveal, .timeline-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

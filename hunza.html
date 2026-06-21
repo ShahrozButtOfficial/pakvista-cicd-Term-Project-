@@ -1,1 +1,279 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunza Valley — Heaven on Earth | PakVista</title>
+  <meta name="description" content="Explore Hunza Valley — Pakistan's crown jewel. Discover the Attabad Lake, Baltit Fort, Rakaposhi, and the world's most scenic Karakoram Highway.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🏔️</div>
+      <span class="nav-logo-text">PakVista</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lahore.html">Lahore</a></li>
+      <li><a href="hunza.html" class="active">Hunza</a></li>
+      <li><a href="swat.html">Swat</a></li>
+      <li><a href="karachi.html">Karachi</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Plan Trip</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('hunza_hero.png');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Hunza</span>
+      </div>
+      <div class="page-hero-tag">🏔️ Mountain Paradise · Gilgit-Baltistan</div>
+      <h1 class="page-hero-title">Hunza</h1>
+      <p class="page-hero-subtitle">Where the Karakoram meets the sky — the valley of longevity, turquoise lakes, and ancient kingdoms.</p>
+    </div>
+  </div>
+
+  <!-- ── OVERVIEW ── -->
+  <section class="section">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="reveal">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="hunza_hero.png" alt="Hunza Valley Panorama">
+        </div>
+        <div class="gallery-item">
+          <img src="hunza_hero.png" alt="Attabad Lake" style="object-position: 30% 60%;">
+        </div>
+        <div class="gallery-item">
+          <img src="hunza_hero.png" alt="Karimabad village" style="object-position: 70% 30%;">
+        </div>
+      </div>
+      <div>
+        <span class="section-label">🌟 Overview</span>
+        <h2 class="section-title" style="text-align:left; margin-top:0.5rem;">
+          The <em>Eighth</em> Wonder
+        </h2>
+        <p style="color: var(--clr-muted); line-height: 1.8; margin-bottom: 1rem;">
+          Nestled in the embrace of three mighty mountain ranges — the Karakoram, Himalaya, and Hindu Kush — Hunza Valley is a place so stunning that it has been called the inspiration for Shangri-La, the mythical Himalayan paradise.
+        </p>
+        <p style="color: var(--clr-muted); line-height: 1.8; margin-bottom: 1.8rem;">
+          The people of Hunza are renowned for their extraordinary longevity and health, a diet of apricots and walnuts, and a culture of warm hospitality that has welcomed silk road travelers for millennia. Today, it remains one of Earth's most spectacular destinations.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-teal);">7,788m</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Rakaposhi Peak</div>
+          </div>
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-amber);">2,438m</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Valley Altitude</div>
+          </div>
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-gold);">100+</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Years Avg Lifespan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TOP ATTRACTIONS ── -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header reveal">
+      <span class="section-label">🗺️ Must-Visit</span>
+      <h2 class="section-title">Top Attractions</h2>
+      <p class="section-desc">Natural wonders and ancient history collide in this high-altitude paradise.</p>
+    </div>
+    <div class="info-grid">
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon" style="background: linear-gradient(135deg,#0a4a7a,#00cfff);">🌊</div>
+        <h3 class="card-title">Attabad Lake</h3>
+        <p class="card-text">Born from a 2010 landslide, this surreal turquoise lake stretches 21 km through the Karakoram, its vivid blue waters framed by dramatic rocky cliffs. Boat tours are a must.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg,#6b3500,#d47000);">🏯</div>
+        <h3 class="card-title">Baltit Fort</h3>
+        <p class="card-text">This 700-year-old fortress overlooks Karimabad from a rocky perch, offering panoramic views of the valley and Ultar Sar peak. A UNESCO candidate site and Hunza's crown jewel.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-3">
+        <div class="card-icon" style="background: linear-gradient(135deg,#0e6b3b,#4caf50);">🌸</div>
+        <h3 class="card-title">Cherry Blossom Fields</h3>
+        <p class="card-text">Each April, Hunza explodes in pink and white as apricot and cherry trees blossom simultaneously — one of the world's most beautiful natural spectacles.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-4">
+        <div class="card-icon" style="background: linear-gradient(135deg,#1a0080,#6000ff);">🛣️</div>
+        <h3 class="card-title">Karakoram Highway</h3>
+        <p class="card-text">The 8th Wonder of the World — a 1,300km engineering marvel connecting Pakistan to China through the mightiest mountains on the planet. The drive itself is the destination.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon" style="background: linear-gradient(135deg,#4a3500,#b08800);">🏰</div>
+        <h3 class="card-title">Altit Fort</h3>
+        <p class="card-text">Said to be over 900 years old, Altit is the oldest fort in Hunza. Its wooden architecture and riverside location make it a photographer's dream.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg,#003b6b,#0088d4);">🏔️</div>
+        <h3 class="card-title">Rakaposhi View Point</h3>
+        <p class="card-text">From Danyore, you can see Rakaposhi — one of the world's most breathtaking peaks — in its full 7,788m glory, rising directly from the valley floor in a single dramatic sweep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ITINERARY ── -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header reveal">
+      <span class="section-label">📅 Itinerary</span>
+      <h2 class="section-title">5-Day Hunza Journey</h2>
+      <p class="section-desc">The classic route through the valley of longevity.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-day">Day 1</div>
+          <div class="timeline-title">Arrive in Gilgit → Karimabad</div>
+          <div class="timeline-text">Fly to Gilgit, then a scenic 2-hour drive to Karimabad. Stop at Rakaposhi viewpoint for stunning photos. Settle in and enjoy sunset from Baltit Fort viewpoint.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 2</div>
+          <div class="timeline-title">Baltit Fort &amp; Karimabad Bazaar</div>
+          <div class="timeline-text">Explore the historic Baltit Fort, then wander through Karimabad's charming market for dried apricots, gemstones, and handicrafts.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 3</div>
+          <div class="timeline-title">Attabad Lake Boat Tour</div>
+          <div class="timeline-text">Drive to the otherworldly Attabad Lake. Take a boat tour through the vivid turquoise water, surrounded by vertical cliff walls. Picnic by the lakeside.</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-day">Day 4</div>
+          <div class="timeline-title">Passu Cones &amp; Hussaini Bridge</div>
+          <div class="timeline-text">Trek to see the dramatic Passu Cathedral peaks, then cross the legendary Hussaini suspension bridge — one of the most thrilling bridge crossings in the world.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 5</div>
+          <div class="timeline-title">Altit Fort &amp; Eagle's Nest</div>
+          <div class="timeline-text">Morning at Altit Fort, then drive up to Eagle's Nest for a panoramic 360° view of the entire Hunza Valley with Rakaposhi and Ultar Sar dominating the skyline.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Departure</div>
+          <div class="timeline-title">Return to Gilgit</div>
+          <div class="timeline-text">Final morning stroll through apricot orchards, then drive back to Gilgit for your flight. Pack your memories — and some dried apricots!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WEATHER & TIPS ── -->
+  <section class="section" style="padding-top: 0;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div class="reveal">
+        <span class="section-label">🌤️ Best Time to Visit</span>
+        <h2 class="section-title" style="text-align:left; font-size: 1.8rem; margin: 0.5rem 0 1.5rem;">Hunza Weather Guide</h2>
+        <div class="weather-widget">
+          <div class="weather-card">
+            <div class="weather-icon">🌸</div>
+            <div class="weather-month">Mar–May</div>
+            <div class="weather-temp">8–20°C</div>
+            <div class="weather-desc">Blossom Season</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">☀️</div>
+            <div class="weather-month">Jun–Aug</div>
+            <div class="weather-temp">15–28°C</div>
+            <div class="weather-desc">Peak Season</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">🍁</div>
+            <div class="weather-month">Sep–Oct</div>
+            <div class="weather-temp">5–18°C</div>
+            <div class="weather-desc">Golden Autumn</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">❄️</div>
+            <div class="weather-month">Nov–Feb</div>
+            <div class="weather-temp">-10–5°C</div>
+            <div class="weather-desc">Snow Season</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <span class="section-label">💡 Traveller Tips</span>
+        <h2 class="section-title" style="text-align:left; font-size: 1.8rem; margin: 0.5rem 0 1.5rem;">Before You Go</h2>
+        <div class="tips-list">
+          <div class="tip-item"><span class="tip-emoji">🎫</span><span>Book Gilgit-Baltistan permits early — required for foreign nationals and recommended for all visitors.</span></div>
+          <div class="tip-item"><span class="tip-emoji">⛰️</span><span>Acclimatize properly — the altitude can cause headaches. Rest your first day and stay hydrated.</span></div>
+          <div class="tip-item"><span class="tip-emoji">📶</span><span>Mobile signal is limited. Download offline maps (Maps.me) and inform someone of your itinerary.</span></div>
+          <div class="tip-item"><span class="tip-emoji">🌸</span><span>For cherry blossoms, arrive between late March and mid-April — exact timing varies each year.</span></div>
+          <div class="tip-item"><span class="tip-emoji">🥾</span><span>Pack proper trekking shoes, layers for cold mornings/evenings, and a good rain jacket.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPLORE MORE ── -->
+  <section style="padding: 4rem 2rem; text-align: center;">
+    <div class="reveal">
+      <h2 class="section-title">Explore More of Pakistan</h2>
+      <p class="section-desc" style="margin-bottom: 2rem;">Your journey continues...</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="swat.html" class="btn btn-primary">🌿 Next: Swat Valley</a>
+        <a href="lahore.html" class="btn btn-outline">🕌 Visit Lahore</a>
+        <a href="index.html" class="btn btn-gold">🏠 Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-logo">PakVista</div>
+    <p class="footer-tagline">Explore the extraordinary beauty of Pakistan</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="lahore.html">Lahore</a>
+      <a href="hunza.html">Hunza</a>
+      <a href="swat.html">Swat</a>
+      <a href="karachi.html">Karachi</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PakVista — DevOps Semester Project &nbsp;|&nbsp; Made with ❤️ in Pakistan</p>
+    </div>
+  </footer>
+
+  <script>
+    const container = document.getElementById('particles');
+    const colors = ['rgba(0,207,255,0.4)', 'rgba(11,196,160,0.4)', 'rgba(255,255,255,0.15)'];
+    for (let i = 0; i < 25; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      const size = Math.random() * 4 + 2;
+      Object.assign(p.style, {
+        left: `${Math.random() * 100}%`,
+        width: `${size}px`, height: `${size}px`,
+        background: colors[Math.floor(Math.random() * colors.length)],
+        animationDuration: `${Math.random() * 15 + 10}s`,
+        animationDelay: `${Math.random() * 10}s`,
+      });
+      container.appendChild(p);
+    }
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+
+    const revealEls = document.querySelectorAll('.reveal, .timeline-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

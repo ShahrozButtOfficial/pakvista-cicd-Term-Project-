@@ -1,14 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaKVISTA</title>
-    <link rel="stylesheet" href="/style.css">
-    
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PakVista — Discover the Beauty of Pakistan</title>
+  <meta name="description" content="Explore Pakistan's most breathtaking destinations. From the ancient Mughal heritage of Lahore to the towering peaks of Hunza and the emerald valleys of Swat.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to PaKVISTA</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab, autem veniam repellat ipsa exercitationem, nisi itaque minus at nam hic fugiat libero, ducimus eligendi. Quaerat cupiditate voluptate illo labore!</p>
+  <div class="particles" id="particles"></div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🏔️</div>
+      <span class="nav-logo-text">PakVista</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="lahore.html">Lahore</a></li>
+      <li><a href="hunza.html">Hunza</a></li>
+      <li><a href="swat.html">Swat</a></li>
+      <li><a href="karachi.html">Karachi</a></li>
+      <li><a href="#contact" class="nav-cta">Plan Trip</a></li>
+    </ul>
+  </nav>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image: url('index_hero.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✈️ &nbsp; Explore Pakistan</div>
+      <h1 class="hero-title">
+        Discover the Soul of <span class="gradient-text">Pakistan</span>
+      </h1>
+      <p class="hero-subtitle">
+        From Mughal grandeur to glacial peaks — experience a land of extraordinary diversity, timeless culture, and breathtaking landscapes.
+      </p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">🗺️ &nbsp; Explore Destinations</a>
+        <a href="#about" class="btn btn-outline">Learn More →</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+  <!-- STATS -->
+  <div style="max-width:1200px; margin:0 auto; padding: 0 2rem;">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Featured Destinations</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="8000">0</div>
+        <div class="stat-label">Metres — K2 Peak</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="5000">0</div>
+        <div class="stat-label">Years of History</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="60">0</div>
+        <div class="stat-label">UNESCO Heritage Sites</div>
+      </div>
+    </div>
+  </div>
+  <!-- DESTINATIONS -->
+  <section class="section" id="destinations">
+    <div class="section-header reveal">
+      <span class="section-label">✨ Top Destinations</span>
+      <h2 class="section-title">Where Will You <em>Wander</em> Next?</h2>
+      <p class="section-desc">Three extraordinary destinations, each with its own magic. Pick your adventure.</p>
+    </div>
+    <div class="destinations-grid">
+      <a href="lahore.html" class="dest-card reveal reveal-delay-1">
+        <img src="lahore_hero.png" alt="Badshahi Mosque Lahore" class="dest-card-img" fetchpriority="high">
+        <div class="dest-card-overlay">
+          <div class="dest-card-tag">🕌 Cultural Capital</div>
+          <div class="dest-card-name">Lahore</div>
+          <div class="dest-card-desc">Immerse yourself in centuries of Mughal grandeur, vibrant bazaars, and Pakistan's richest culinary tradition.</div>
+          <div class="dest-card-arrow">→</div>
+        </div>
+      </a>
+      <a href="hunza.html" class="dest-card reveal reveal-delay-2">
+        <img src="hunza_hero.png" alt="Hunza Valley" class="dest-card-img">
+        <div class="dest-card-overlay">
+          <div class="dest-card-tag">🏔️ Mountain Paradise</div>
+          <div class="dest-card-name">Hunza</div>
+          <div class="dest-card-desc">The valley of longevity — turquoise lakes, ancient forts, and the mightiest mountains on Earth.</div>
+          <div class="dest-card-arrow">→</div>
+        </div>
+      </a>
+      <a href="swat.html" class="dest-card reveal reveal-delay-3">
+        <img src="swat_hero.png" alt="Swat Valley" class="dest-card-img">
+        <div class="dest-card-overlay">
+          <div class="dest-card-tag">🌿 Switzerland of East</div>
+          <div class="dest-card-name">Swat</div>
+          <div class="dest-card-desc">Crystal rivers, lush meadows, ancient Buddhist ruins and forests of towering deodars await you.</div>
+          <div class="dest-card-arrow">→</div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- WHY PAKISTAN -->
+  <section class="section" id="about" style="padding-top: 0;">
+    <div class="section-header reveal">
+      <span class="section-label">🌟 Why Pakistan</span>
+      <h2 class="section-title">A Land Like No Other</h2>
+      <p class="section-desc">Every corner holds a story. Every horizon hides a wonder.</p>
+    </div>
+    <div class="info-grid">
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon">🏛️</div>
+        <h3 class="card-title">5,000 Years of History</h3>
+        <p class="card-text">From the ancient Indus Valley Civilization to Mughal masterpieces, Pakistan's heritage spans millennia.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon">🏔️</div>
+        <h3 class="card-title">World's Highest Peaks</h3>
+        <p class="card-text">Pakistan is home to five of the world's fourteen 8,000-metre peaks including the legendary K2.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-3">
+        <div class="card-icon">🍛</div>
+        <h3 class="card-title">Extraordinary Cuisine</h3>
+        <p class="card-text">Bold flavors, fragrant spices, and a food culture so rich it's considered among the world's finest.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-4">
+        <div class="card-icon">🤝</div>
+        <h3 class="card-title">Legendary Hospitality</h3>
+        <p class="card-text">"Mehman Nawazi" — guest friendship — is a sacred cultural value. Strangers are welcomed as family.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section id="contact" style="padding: 5rem 2rem; text-align: center;">
+    <div class="reveal" style="max-width: 600px; margin: 0 auto;">
+      <span class="section-label">🗺️ Ready to Explore?</span>
+      <h2 class="section-title" style="margin-top:0.5rem;">Plan Your Dream <span style="color: var(--clr-teal);">Pakistan Trip</span></h2>
+      <p class="section-desc" style="margin-bottom: 2.5rem;">Click any destination above to discover detailed travel guides, top attractions, and local tips.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="lahore.html" class="btn btn-primary">🕌 Explore Lahore</a>
+        <a href="hunza.html" class="btn btn-outline">🏔️ Visit Hunza</a>
+        <a href="swat.html" class="btn btn-gold">🌿 Discover Swat</a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">PakVista</div>
+    <p class="footer-tagline">Explore the extraordinary beauty of Pakistan</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="lahore.html">Lahore</a>
+      <a href="hunza.html">Hunza</a>
+      <a href="swat.html">Swat</a>
+      <a href="karachi.html">Karachi</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PakVista — DevOps Semester Project &nbsp;</p>
+    </div>
+  </footer>
+  <script>
+    // Particles
+    const container = document.getElementById('particles');
+    const colors = ['rgba(11,196,160,0.5)', 'rgba(13,155,107,0.4)', 'rgba(240,165,0,0.3)'];
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      const size = Math.random() * 4 + 2;
+      Object.assign(p.style, {
+        left: `${Math.random() * 100}%`,
+        width: `${size}px`, height: `${size}px`,
+        background: colors[Math.floor(Math.random() * colors.length)],
+        animationDuration: `${Math.random() * 15 + 10}s`,
+        animationDelay: `${Math.random() * 10}s`,
+      });
+      container.appendChild(p);
+    }
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+    // Scroll Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    // Counter Animation
+    const cObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = +el.dataset.target;
+        const start = Date.now();
+        const tick = () => {
+          const progress = Math.min((Date.now() - start) / 1800, 1);
+          const ease = 1 - Math.pow(1 - progress, 4);
+          el.textContent = Math.floor(ease * target).toLocaleString();
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target.toLocaleString() + (target >= 100 ? '+' : '');
+        };
+        tick();
+        cObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-target]').forEach(el => cObserver.observe(el));
+  </script>
 </body>
 </html>
