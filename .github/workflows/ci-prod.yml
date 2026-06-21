@@ -1,0 +1,28 @@
+name: Production CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  html-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify HTML Files Exist
+        run: |
+          test -f index.html
+          test -f lahore.html
+          test -f hunza.html
+          test -f swat.html
+          test -f karachi.html
+
+      - name: Display Success Message
+        run: echo "Production CI passed successfully!"
