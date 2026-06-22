@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karachi - City of Lights | PakVista</title>
+  <title>Karachi — City of Lights | PakVista</title>
+  <meta name="description" content="Discover Karachi — Pakistan's largest city and economic hub. Explore Clifton Beach, Quaid-e-Azam Mausoleum, Mohatta Palace, and the vibrant food street of Burns Road.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="page-bg"></div>
   <div class="particles" id="particles"></div>
+
+  <!-- ── NAVBAR ── -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">
-      <div class="nav-logo-icon">🏙️</div>
+      <div class="nav-logo-icon">🏔️</div>
       <span class="nav-logo-text">PakVista</span>
     </a>
     <ul class="nav-links">
@@ -24,46 +28,213 @@
     </ul>
   </nav>
 
+  <!-- ── PAGE HERO ── -->
   <div class="page-hero">
-    <div class="page-hero-bg" style="background-image: url('assets/images/karachi_hero.jpg');"></div>
+    <div class="page-hero-bg" style="background-image: url('karachi_hero.png');"></div>
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
-      <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Karachi</span></div>
-      <div class="page-hero-tag">🌊 Coastal Metropolis · Sindh</div>
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Karachi</span>
+      </div>
+      <div class="page-hero-tag">🌊 City of Lights · Sindh</div>
       <h1 class="page-hero-title">Karachi</h1>
-      <p class="page-hero-subtitle">Pakistan's vast, energetic port city — a mosaic of beaches, bazaars, and rich cultural life.</p>
+      <p class="page-hero-subtitle">Where the Arabian Sea breeze meets a relentless urban heartbeat — Karachi is Pakistan's city of dreams.</p>
     </div>
   </div>
 
-  <main>
-    <section>
-      <h2>Clifton Beach</h2>
-      <p>Clifton Beach is one of Karachi’s most famous attractions. Visitors enjoy the sea breeze, camel rides, food stalls, and beautiful sunset views along the Arabian Sea.</p>
-      <figure>
-        <img src="assets/images/karachi_hero.jpg" alt="Clifton Beach" style="max-width:100%; height:auto;">
-        <figcaption>Clifton Beach, Karachi</figcaption>
-      </figure>
-    </section>
+  <!-- ── OVERVIEW ── -->
+  <section class="section">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;" class="reveal">
+      <div>
+        <span class="section-label">🌟 Overview</span>
+        <h2 class="section-title" style="text-align:left; margin-top:0.5rem;">
+          The *Metropolis* of Dreams &amp; Sea
+        </h2>
+        <p style="color: var(--clr-muted); line-height: 1.8; margin-bottom: 1rem;">
+          Karachi, the "City of Lights", is Pakistan's economic powerhouse, cultural melting pot, and largest metropolis. Nestled on the coast of the Arabian Sea, it has grown from a tiny 18th-century fortified fishing settlement (Kolachi) into a dynamic megacity of over 20 million people.
+        </p>
+        <p style="color: var(--clr-muted); line-height: 1.8; margin-bottom: 1.8rem;">
+          It is a city that never sleeps, defined by its incredible diversity, historic colonial-era architecture, sprawling golden beaches, and a culinary scene that ranks among the most diverse and vibrant in South Asia.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-amber);">20M+</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Population</div>
+          </div>
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-teal);">27°C</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Avg Temp</div>
+          </div>
+          <div style="text-align:center; padding: 1rem 1.5rem; background: var(--clr-glass); border: 1px solid var(--clr-border); border-radius: var(--radius-md);">
+            <div style="font-size: 1.8rem; font-weight:900; color: var(--clr-gold);">1st</div>
+            <div style="font-size: 0.8rem; color: var(--clr-muted);">Largest City</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="karachi_hero.png" alt="Karachi Skyline">
+        </div>
+        <div class="gallery-item">
+          <img src="karachi_hero.png" alt="Clifton Beach" style="object-position: 20% 70%;">
+        </div>
+        <div class="gallery-item">
+          <img src="karachi_hero.png" alt="Mazar-e-Quaid" style="object-position: 60% 20%;">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Mohatta Palace</h2>
-      <p>Mohatta Palace is a historic building that reflects Karachi’s architectural beauty. Today, it is used as a museum and cultural center, attracting tourists and history lovers.</p>
-      <figure>
-        <img src="assets/images/karachi_hero.jpg" alt="Mohatta Palace" style="max-width:100%; height:auto; object-position: 40% 30%;">
-        <figcaption>Mohatta Palace heritage site</figcaption>
-      </figure>
-    </section>
+  <!-- ── TOP ATTRACTIONS ── -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header reveal">
+      <span class="section-label">🗺️ Must-Visit</span>
+      <h2 class="section-title">Top Attractions</h2>
+      <p class="section-desc">From sandy shores to grand architecture — Karachi offers an unforgettable urban adventure.</p>
+    </div>
+    <div class="info-grid">
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon" style="background: linear-gradient(135deg,#005b82,#00aaff);">🌊</div>
+        <h3 class="card-title">Clifton Beach</h3>
+        <p class="card-text">The iconic sandy shore where millions gather to feel the Arabian Sea breeze, enjoy camel rides, and watch stunning ocean sunsets.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg,#a68200,#ffd166);">🏛️</div>
+        <h3 class="card-title">Mazar-e-Quaid</h3>
+        <p class="card-text">The spectacular white marble mausoleum of Pakistan's founder, Muhammad Ali Jinnah, surrounded by a lush 53-hectare park.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-3">
+        <div class="card-icon" style="background: linear-gradient(135deg,#9e133c,#f0003c);">🏰</div>
+        <h3 class="card-title">Mohatta Palace</h3>
+        <p class="card-text">Built in 1927 in the Rajasthani style, this beautiful palace of pink Jodhpur stone is now a prominent art museum.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-4">
+        <div class="card-icon" style="background: linear-gradient(135deg,#824400,#ff8000);">🍛</div>
+        <h3 class="card-title">Burns Road</h3>
+        <p class="card-text">The legendary cradle of Karachi's street food, famous for historic eateries serving Bun Kababs, Haleem, and Biryani.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon" style="background: linear-gradient(135deg,#006b54,#00cc9e);">🤿</div>
+        <h3 class="card-title">Charna Island</h3>
+        <p class="card-text">A short boat trip from the city, offering crystal-clear waters perfect for scuba diving, snorkeling, and marine life viewing.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon" style="background: linear-gradient(135deg,#4e008c,#8d00ff);">🚢</div>
+        <h3 class="card-title">Maritime Museum</h3>
+        <p class="card-text">A massive naval museum featuring outdoor exhibits, a real submarine, and beautifully landscaped gardens.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Pakistan Maritime Museum</h2>
-      <p>The Pakistan Maritime Museum presents the naval history of Pakistan through galleries, ship models, submarines, and outdoor exhibits. It is an educational and family-friendly destination.</p>
-      <figure>
-        <img src="assets/images/karachi_hero.jpg" alt="Maritime Museum" style="max-width:100%; height:auto;">
-        <figcaption>Pakistan Maritime Museum, Karachi</figcaption>
-      </figure>
-    </section>
-  </main>
+  <!-- ── ITINERARY ── -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-header reveal">
+      <span class="section-label">📅 Itinerary</span>
+      <h2 class="section-title">3-Day Karachi Plan</h2>
+      <p class="section-desc">The ultimate route to experience the energy and coastal beauty of Karachi.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-day">Day 1 — Morning</div>
+          <div class="timeline-title">Founders &amp; Palaces</div>
+          <div class="timeline-text">Start at Mazar-e-Quaid to pay respects, then visit the stunning pink Mohatta Palace in Clifton to explore its history and art.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 1 — Afternoon</div>
+          <div class="timeline-title">Coastal Breeze</div>
+          <div class="timeline-text">Walk along the Clifton Beach shoreline, enjoy a traditional camel ride, and taste roasted corn on the beach.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 1 — Evening</div>
+          <div class="timeline-title">Food Street Feast</div>
+          <div class="timeline-text">Head to Burns Road for dinner, enjoying traditional food like Bun Kababs, biryani, and rabri.</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-day">Day 2</div>
+          <div class="timeline-title">Maritime &amp; Modern Mall</div>
+          <div class="timeline-text">Spend the morning at the Maritime Museum, then afternoon at Dolmen Mall Clifton for shopping and sea views.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 3 — Morning</div>
+          <div class="timeline-title">History &amp; Architecture</div>
+          <div class="timeline-text">Walk around Frere Hall and Empress Market to admire the British colonial-era architecture.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-day">Day 3 — Evening</div>
+          <div class="timeline-title">Sunset at Port Grand</div>
+          <div class="timeline-text">Walk along the harbor at Port Grand, enjoying seafood, live music, and the sea breeze under the lights.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ── WEATHER & TIPS ── -->
+  <section class="section" style="padding-top: 0;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div class="reveal">
+        <span class="section-label">🌤️ Best Time to Visit</span>
+        <h2 class="section-title" style="text-align:left; font-size: 1.8rem; margin: 0.5rem 0 1.5rem;">Karachi Weather Guide</h2>
+        <div class="weather-widget">
+          <div class="weather-card">
+            <div class="weather-icon">🍂</div>
+            <div class="weather-month">Oct–Feb</div>
+            <div class="weather-temp">18–26°C</div>
+            <div class="weather-desc">Pleasant Breeze</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">☀️</div>
+            <div class="weather-month">Mar–May</div>
+            <div class="weather-temp">32–38°C</div>
+            <div class="weather-desc">Warm &amp; Humid</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">🌧️</div>
+            <div class="weather-month">Jun–Aug</div>
+            <div class="weather-temp">28–34°C</div>
+            <div class="weather-desc">Monsoon Season</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-icon">🌸</div>
+            <div class="weather-month">Sep</div>
+            <div class="weather-temp">28–34°C</div>
+            <div class="weather-desc">Autumn Start</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <span class="section-label">💡 Traveller Tips</span>
+        <h2 class="section-title" style="text-align:left; font-size: 1.8rem; margin: 0.5rem 0 1.5rem;">Before You Go</h2>
+        <div class="tips-list">
+          <div class="tip-item"><span class="tip-emoji">🍛</span><span>Try the spicy Karachi Biryani — it's legendary and different from Lahore's!</span></div>
+          <div class="tip-item"><span class="tip-emoji">🚗</span><span>Travel via ride-hailing apps (Careem/Yango/inDrive) for safe and transparent pricing.</span></div>
+          <div class="tip-item"><span class="tip-emoji">⚓</span><span>Visit Port Grand in the evening for a clean, secure, and beautiful dining experience by the water.</span></div>
+          <div class="tip-item"><span class="tip-emoji">🌊</span><span>Check the sea conditions before going deep into the water at Clifton or Hawke's Bay.</span></div>
+          <div class="tip-item"><span class="tip-emoji">📸</span><span>Visit Empress Market in the morning for vibrant street photography and spice shopping.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPLORE MORE ── -->
+  <section style="padding: 4rem 2rem; text-align: center;">
+    <div class="reveal">
+      <h2 class="section-title">Explore More of Pakistan</h2>
+      <p class="section-desc" style="margin-bottom: 2rem;">The adventure continues across the country.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="lahore.html" class="btn btn-primary">🕌 Explore Lahore</a>
+        <a href="hunza.html" class="btn btn-outline">🏔️ Visit Hunza</a>
+        <a href="swat.html" class="btn btn-gold">🌿 Discover Swat</a>
+        <a href="index.html" class="btn btn-primary">🏠 Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="footer-logo">PakVista</div>
     <p class="footer-tagline">Explore the extraordinary beauty of Pakistan</p>
@@ -81,7 +252,7 @@
 
   <script>
     const container = document.getElementById('particles');
-    const colors = ['rgba(0,207,255,0.4)', 'rgba(11,196,160,0.4)', 'rgba(255,255,255,0.15)'];
+    const colors = ['rgba(11,196,160,0.5)', 'rgba(0,170,255,0.4)', 'rgba(240,165,0,0.3)'];
     for (let i = 0; i < 25; i++) {
       const p = document.createElement('div');
       p.classList.add('particle');
